@@ -1,0 +1,45 @@
+{
+	"name": "@freedom-meta-dao/sdk",
+	"version": "0.0.1",
+	"description": "Datatypes and prepackaged functionality for common Freedom MetaDAO contract interactions.",
+	"main": "./dist/index.js",
+	"repository": "https://github.com/freedom-meta-dao/sdk",
+	"author": "Toreda, Inc.",
+	"license": "MIT",
+	"private": false,
+	"public": true,
+	"devDependencies": {
+		"@swc/core": "^1.2.179",
+		"@swc/jest": "^0.2.21",
+		"@toreda/build-tools": "^0.8.0",
+		"@toreda/eslint-config": "^2.2.0",
+		"@toreda/prettier-config": "^1.0.1",
+		"@toreda/types": "^2.11.0",
+		"@types/gulp": "^4.0.9",
+		"@types/jest": "^27.5.0",
+		"eslint": "^8.15.0",
+		"eslint-plugin-prettier": "^4.0.0",
+		"eslint-prettier-config": "^1.0.1",
+		"gulp": "^4.0.2",
+		"jest": "^28.1.0",
+		"jest-environment-node-single-context": "^28.0.0",
+		"prettier": "^2.6.2",
+		"typescript": "^4.6.4"
+	},
+	"scripts": {
+		"build": "yarn gulp",
+		"lint": "yarn eslint ./src/**",
+		"lint:fix": "yarn eslint src/**/*.{js,ts,tsx} --quiet --fix",
+		"lint:nofix": "yarn lint",
+		"make:depgraph": "yarn madge src/index.ts --image dependency-graph.png",
+		"make:docs": "yarn typedoc docs --categorizeByGroup false --entryPoints ./src/index.ts",
+		"test": "yarn jest --bail --coverage --maxWorkers=2",
+		"test:silent": "yarn jest --coverage=false --maxWorkers=25% --silent --verbose=false"
+	},
+	"prettier": "@toreda/prettier-config",
+	"dependencies": {
+		"@toreda/log": "^0.6.16",
+		"@toreda/strong-types": "^0.28.5",
+		"@toreda/time": "^0.1.6"
+	}
+}

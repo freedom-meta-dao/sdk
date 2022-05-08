@@ -1,0 +1,45 @@
+{
+	"exclude": ["node_modules", "**/*.spec.ts", "dist/**"],
+	"include": ["./src/**.ts", "./src/**/*.ts"],
+	"filesGlob": ["./src/index.ts", "./src/**/*.ts", "./src/**.ts", "!./node_modules/**"],
+	"compilerOptions": {
+		"allowUnreachableCode": false,
+		"alwaysStrict": true,
+		"baseUrl": ".",
+		"declaration": true,
+		"esModuleInterop": true,
+		"isolatedModules": false,
+		"lib": ["es6", "ES2015", "ES2017", "ES2017.TypedArrays"],
+		"module": "commonjs",
+		"moduleResolution": "node",
+		"noImplicitUseStrict": false,
+		"outDir": "./dist",
+		"preserveConstEnums": true,
+		"removeComments": false,
+		"resolveJsonModule": true,
+		"rootDir": "./src",
+		"sourceMap": true,
+		"strict": true,
+		"strictBindCallApply": true,
+		"strictNullChecks": true,
+		"strictPropertyInitialization": true,
+		"target": "es2015",
+		"traceResolution": false
+	},
+	"ts-jest": {
+		"module": "commonjs",
+		"target": "esnext",
+		"compilerOptions": {
+			"declaration": false,
+			"isolatedModules": true,
+			"sourceMap": false
+		}
+	},
+	"ts-node": {
+		"module": "commonjs",
+		"compilerOptions": {
+			"sourceMap": false
+		},
+		"swc": true
+	}
+}
