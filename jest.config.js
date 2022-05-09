@@ -1,16 +1,22 @@
 module.exports = {
-	testEnvironment: "jest-environment-node-single-context",
-	transform: {"^.+\\.(t|j)sx?$": "@swc/jest"},
-	testRegex: "(/__test__/.*|(\\.|/)(spec))\\.ts$",
-	roots: ["./"],
-	coverageDirectory: "./coverage",
-	testResultsProcessor: "jest-sonar-reporter",
+	roots: ['./'],
+	testEnvironment: 'jsdom',
+	transform: {
+		'^.+\\.ts$': '@swc/jest'
+	},
+	testRegex: '(/__tests__/.*|(\\.|/)(spec))\\.ts$',
 	coveragePathIgnorePatterns: [
-		"test/",
-		"node_modules/",
-		".node/",
-		"jest/",
-		"coverage/",
-		"webpack.config.js"
-	]
+		'.eslintrc.js',
+		'.node/',
+		'coverage/',
+		'jest.config.js',
+		'jest/',
+		'node_modules/',
+		'tests/',
+		'webpack.config.js'
+	],
+	moduleFileExtensions: ['ts', 'js', 'json'],
+	coverageDirectory: './coverage',
+	transformIgnorePatterns: ['jest.config.js'],
+	testResultsProcessor: 'jest-sonar-reporter'
 };

@@ -1,3 +1,5 @@
+
+# Freedom MetaDAO SDK
 [![CI](https://img.shields.io/github/workflow/status/freedom-meta-dao/sdk/CI?style=for-the-badge)](https://github.com/freedom-meta-dao/sdk/actions)
 [![Coverage](https://img.shields.io/sonar/coverage/freedom-meta-dao_sdk?server=https%3A%2F%2Fsonarcloud.io&style=for-the-badge)](https://sonarcloud.io/dashboard?id=freedom-meta-dao_sdk) [![badge](https://img.shields.io/snyk/vulnerabilities/github/freedom-meta-dao/sdk?style=for-the-badge)](https://github.com/freedom-meta-dao/sdk/releases)
 
@@ -7,11 +9,12 @@
 
  [![license](https://img.shields.io/github/license/freedom-meta-dao/sdk?style=for-the-badge)](https://github.com/freedom-meta-dao/sdk/blob/master/LICENSE)
 
-# Freedom MetaDAO SDK
-Datatypes and prepackaged functionality for common Freedom MetaDAO contract interactions.
 &nbsp;
 
+# About
+Datatypes and prepackaged functionality for common Freedom MetaDAO contract interactions.
 
+&nbsp;
 
 # Websites
 ## Freedom MetaDAO

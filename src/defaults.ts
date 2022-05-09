@@ -1,3 +1,6 @@
+import type {CommunityPollStatus} from './community/poll/status';
+import {CommunityRole} from './community/role';
+import type {CommunityRoleData} from './community/role/data';
 import type {CommunityVisibility} from './community/visibility';
 import type {EthAddr} from '@toreda/types';
 
@@ -14,9 +17,20 @@ export class Defaults {
 		Name: string;
 		Visibility: CommunityVisibility;
 		Addr: EthAddr;
+		Roles: CommunityRole[];
+		RolesData: CommunityRoleData[];
 	} = {
 		Name: '_',
 		Visibility: 'public',
-		Addr: 0x0
+		Addr: 0x0,
+		Roles: [],
+		RolesData: []
 	};
+
+	public static CommunityPoll: {
+		[k: string]: unknown;
+		Status: CommunityPollStatus;
+	} = {
+		Status: 'INACTIVE'
+	} as const;
 }

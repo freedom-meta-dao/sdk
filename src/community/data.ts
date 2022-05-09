@@ -1,4 +1,4 @@
-import {CommunityRoleData} from './role/data';
+import type {CommunityRoleData} from './role/data';
 import type {CommunityVisibility} from './visibility';
 import type {EthAddr} from '@toreda/types';
 
