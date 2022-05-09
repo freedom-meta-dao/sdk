@@ -1,8 +1,6 @@
-import {Strong, StrongMap, Text, strongMake, textMake} from "@toreda/strong-types";
+import {StrongMap, Text, textMake} from '@toreda/strong-types';
 
-import type {CommunityPollOptionData} from "./option/data";
-import {CommunityPollStatus} from "./status";
-import {Defaults} from "../../defaults";
+import type {CommunityPollOptionData} from './option/data';
 
 /**
  * @category Community Polls
@@ -14,7 +12,6 @@ export class CommunityPollOption extends StrongMap {
 		super();
 
 		this.value = textMake('_');
-		//this.status = strongMake<CommunityPollStatus>(Defaults.CommunityPoll.Status)
 
 		this.parse(data);
 	}
@@ -26,6 +23,6 @@ export class CommunityPollOption extends StrongMap {
 	}
 
 	public reset(): void {
-
+		this.value.reset();
 	}
 }

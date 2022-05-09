@@ -1,4 +1,3 @@
-
 /**
  * @category Community Polls
  */

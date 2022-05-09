@@ -1,4 +1,4 @@
-import type {CommunityPollStatus} from "./status";
+import type {CommunityPollStatus} from './status';
 
 /**
  * @category Community Polls
